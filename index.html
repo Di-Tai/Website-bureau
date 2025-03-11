@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бюро перекладів</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #004d99;
+            color: white;
+            padding: 20px;
+        }
+        .hero {
+            padding: 50px;
+            background: #f4f4f4;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        .hero button {
+            background: #004d99;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .service {
+            max-width: 300px;
+            margin: 20px;
+            text-align: left;
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>БЮРО ПЕРЕКЛАДІВ</h1>
+        <p>Швидко, якісно, конфіденційно</p>
+    </header>
+    
+    <section class="hero">
+        <img src="hero.jpg" alt="Переклади">
+        <p>Переклади, нотаріальне посвідчення, апостиль</p>
+        <button onclick="contactUs()">ЗАТЕЛЕФОНУВАТИ</button>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <img src="translation.jpg" alt="Переклад">
+            <h2>Переклад з будь-якої мови</h2>
+            <p>Ми пропонуємо Вам якісний переклад з понад 40 мов світу.</p>
+        </div>
+        <div class="service">
+            <img src="notary.jpg" alt="Нотаріальне посвідчення">
+            <h2>Нотаріальне посвідчення</h2>
+            <p>Пропонуємо послугу нотаріального посвідчення документів.</p>
+        </div>
+        <div class="service">
+            <img src="apostille.jpg" alt="Апостилювання">
+            <h2>Апостилювання</h2>
+            <p>Допомагаємо в апостилізації Вашого документа.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Бюро перекладів. Всі права захищені.</p>
+    </footer>
+
+    <script>
+        function contactUs() {
+            alert("Зателефонуйте нам: +38 (097) 222-15-95");
+        }
+    </script>
+</body>
+</html>
