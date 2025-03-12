@@ -52,25 +52,28 @@ p {
 
 /* 🔹 Головна секція (Hero) */
 .hero {
-    margin-top: 20px; /* Додаємо відстань між хедером і зображенням */
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Розташовує елементи один під одним */
+    align-items: center; /* Центрує всі елементи по ширині */
+    text-align: center; /* Вирівнює текст */
+    margin-top: 20px; /* Відступ від хедера */
+}
+
+.hero p {
+    font-size: 18px;
+    color: #4A148C; /* Фіолетовий */
+    margin-top: 15px; /* Відступ від картинки */
 }
 
 .hero img {
     width: 100vw; /* Займає всю ширину екрану */
     height: 500px; /* Висота, щоб не було занадто великою */
     object-fit: cover; /* Обрізає зайве, зберігаючи пропорції */
-    display: block;
-}
-
-.hero img:hover {
-    transform: scale(1.03);
 }
 
 /* 🔹 Кнопка */
 .hero button {
-    background: #7B1FA2; /* Глибокий фіолетовий */
+    background: #7B1FA2;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -79,6 +82,7 @@ p {
     border-radius: 5px;
     transition: background 0.3s ease-in-out, transform 0.2s;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px; /* Відступ від тексту */
 }
 
 .hero button:hover {
