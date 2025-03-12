@@ -20,7 +20,7 @@ body {
 header {
     background: linear-gradient(90deg, #5B21B6, #9333EA); /* Фіолетовий градієнт */
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -52,19 +52,16 @@ p {
 
 /* 🔹 Головна секція (Hero) */
 .hero {
-    padding: 60px 20px;
-    background: #EDE9FE; /* Світло-фіолетовий фон */
-    border-radius: 10px;
-    max-width: 900px;
-    margin: 40px auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0; /* Прибираємо внутрішні відступи */
+    background: none; /* Видаляємо фон */
+    margin: 0; /* Видаляємо зовнішні відступи */
 }
 
 .hero img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    width: 100vw; /* Займає всю ширину екрану */
+    height: calc(100px - 1cm); /* Задаємо вузьку висоту (на 1 см нижче за старий hero) */
+    object-fit: cover; /* Обрізає зайве, зберігаючи пропорції */
+    display: block;
 }
 
 .hero img:hover {
